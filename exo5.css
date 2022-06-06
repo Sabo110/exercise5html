@@ -1,6 +1,6 @@
 body{
     background-color: #240c04;
-    padding: 0 20px;
+    padding: 0 15px;
     font-size: 20px;
 }
 h1,h2{
@@ -9,6 +9,7 @@ h1,h2{
 h1{
     color: #F9B51D;
     font-size: 80px;
+    
 }
 ul{
     display: flex;
@@ -30,9 +31,7 @@ li{
 #sidebar{
     background-color: #4E3628;
     width: 420px;
-    position: absolute;
-    top: 258px;
-    right: 20px;
+    height: 330px;
     box-sizing: border-box;
     padding: 15px;
 
@@ -49,9 +48,12 @@ section{
 article h2 a{
     color: #ECDFAD;
     text-decoration: none;
+    font-family: sans-serif;
 }
 article p{
     color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 .pagination a{
     text-decoration: none;
@@ -71,12 +73,15 @@ article p{
 }
 aside h2{
     color: #D15429;
-    font-size: 25px;
+    font-size: 20px;
+    
+    
 }
+
 aside p a{
     text-decoration: none;
     color: #ECDFAD;
-    font-size: 17px;
+    font-size: 16px;
 }
 aside p{
     line-height: 16px;
@@ -86,22 +91,27 @@ aside p{
     background-color: #2C2119;
     color: #FFF;
     border: 2px solid #9C8070;
-    border-radius: 5px;
+    border-radius: 3px;
     font-family: sans-serif;
     font-size: 16px;
     padding: 7px;
+    height: 35px;
+
     
 }
 form{
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 #champ{
     background-color: #9C8070;
     padding: 5px;
     border: 2px solid #2C2119;
+    color: #FFF;
+    height: 20px;
 }
 footer{
-    color: #FFF;  
+    color: #FFF; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 img{
     border: 5px solid #6B493B;
@@ -116,5 +126,70 @@ img{
 }
 .ar1{
     padding-bottom: 20px;
+
 }
+main{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media screen and (max-width :768px){
+    ul{
+        
+        flex-direction: column;
+        
+    }
+    
+    
+    main{
+        flex-direction: column;
+        
+    }
+    section{
+        width: 100%;
+        
+
+    }
+    article{
+        width: 100%;
+    }
+    img{
+        width: 95%;
+    }
+    #sidebar{
+        width: 100%; 
+        height: auto;
+        margin-top: 15px;
+    }
+   
+}
+@media screen and (min-width :768px) and (max-width: 1352px ){
+    
+    
+    
+    main{
+        flex-direction: column;
+        
+    }
+    section{
+        width: 100%;
+        
+
+    }
+    article{
+        width: 100%;
+    }
+    img{
+        width: 95%;
+    }
+    #sidebar{
+         
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+   
+}
+
 
